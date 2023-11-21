@@ -51,14 +51,16 @@ header{
 
 /*main*/
 .row{
-    width: 1000px;
+    width: 100%;
     background-color: blue;
     flex-wrap: wrap;
+    margin: 0 -1rem;
 }
 .col{
     height: 500px;
     background-color: goldenrod;
-    width: calc(100% / 3);
+    flex-basis: calc(100% / 3);
+    padding: 1rem;
     
 }
 
