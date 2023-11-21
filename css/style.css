@@ -23,11 +23,18 @@ body{
 ul{
     list-style-type: none;
     display: flex;
+    gap: 10px;
 }
+
 
 a{
     color:white;
     text-decoration: none;
+}
+
+.logo  img{
+    width: 150px;
+    height: 35px;
 }
 
 .border{
@@ -49,12 +56,15 @@ header{
     
 }
 
+.icon{
+    padding: 5px;
+}
+
 /*main*/
 .row{
     width: 100%;
     background-color: blue;
     flex-wrap: wrap;
-    margin: 0 -1rem;
 }
 .col{
     height: 500px;
