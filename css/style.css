@@ -8,6 +8,7 @@
 /*UTILS*/
 body{
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-top: 100px;
 }
 
 
@@ -16,7 +17,7 @@ body{
 }
 
 .container{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -32,10 +33,7 @@ a{
     text-decoration: none;
 }
 
-.logo  img{
-    width: 150px;
-    height: 35px;
-}
+
 
 .border{
     border: 1px dashed black;
@@ -44,44 +42,133 @@ a{
 
 header{
     background-color: orangered;
-    height: 60px;
     color: white;
+    box-shadow: 0 1px 3px #666;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .nav-bar{
-    width: 100%;
-    justify-content: space-between;
-    height: 100%;
-    align-items:center ;
+    height: 70px;
+    padding: 10px 0;
+    align-items: center;
     
 }
 
-.icon{
-    padding: 5px;
+.nav-bar >*{
+    flex-basis: calc(100% / 3);
+}
+
+.nav-bar img{
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon ul{
+    justify-content: flex-end;
 }
 
 /*main*/
 .row{
-    width: 100%;
-    background-color: blue;
+    margin: 0 -1rem;
     flex-wrap: wrap;
 }
 .col{
-    height: 500px;
-    background-color: goldenrod;
     flex-basis: calc(100% / 3);
     padding: 1rem;
-    
 }
 
-.card{
-    height: 100%;
-    width: 100%;
+.card-img{
+    position: relative;
 }
+
+.card img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+
+}
+.card .secondary-pic,
+.card:hover .main-pic{
+    display: none;
+}
+
+.card:hover .secondary-pic{
+    display: block;
+}
+
+.favorite{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 50px;
+
+    position: absolute;
+    right: 0;
+    top: 10px;
+
+    cursor: pointer;
+}
+.favorite:hover{
+    color: red;
+}
+
+.card-badges {
+    position: absolute;
+
+    left: 0;
+    bottom: 20px;
+}
+
+.badge{
+    color:white;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.badge-discount{
+    background-color: red;
+}
+
+.badge-tag{
+    background-color: green;
+    text-transform: capitalize;
+}
+
+.discounted-price{
+    color: red;
+}
+
+.cart-text > *{
+    padding: 2px;
+}
+
+.cart-text h3{
+    font-size: 16px;
+}
+
+.article-brand{
+    color: #666;
+    font-size: 14px;
+}
+
+.article-price{
+    font-size: 13px;
+}
+
+
+
 
 /*footer*/
 
-footer{
+/* footer{
     background-color: black;
     height: 60px;
     color: white;
@@ -93,4 +180,4 @@ footer{
     height: 100%;
     align-items:center ;
     border-bottom: 1px solid white;
-}
+} */
