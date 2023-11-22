@@ -56,7 +56,6 @@ header{
     height: 70px;
     padding: 10px 0;
     align-items: center;
-    
 }
 
 .nav-bar >*{
@@ -168,16 +167,30 @@ header{
 
 /*footer*/
 
-/* footer{
+footer{
     background-color: black;
-    height: 60px;
     color: white;
 }
 
-.nav-footer{
-    width: 100%;
-    justify-content: space-between;
-    height: 100%;
-    align-items:center ;
-    border-bottom: 1px solid white;
-} */
+.row-footer{
+    height: 70px;
+    padding: 10px 0;
+    align-items: center;   
+}
+
+.row-footer > *{
+    flex-basis: calc(100% / 2); 
+}
+
+.col-social{
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.title-fot{
+    padding-bottom: 5px;
+}   
+
+.icon:hover {
+    cursor: pointer;
+}
